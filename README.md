@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🧿 KSR Gallery
 
 A minimalist, elegant, and collaborative visual storytelling platform. Lumiere Gallery allows creators to curate their own digital space, share their unique perspectives, and explore the collections of others.
@@ -69,3 +70,7 @@ This project uses hardened Firestore Security Rules to ensure:
 KSR Gallery is fully responsive, offering a tailored experience for mobile, tablet, and desktop viewports, with touch-optimized interactions and fluid layouts.
 
 ---
+=======
+# CodeAlpha-KSRGallery
+An immersive, animated Gallery to store memories.
+>>>>>>> b0357127f0950e1fb0f61b7a50cca0bd6b67759c
