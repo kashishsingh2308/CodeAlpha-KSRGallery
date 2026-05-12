@@ -1,0 +1,40 @@
+{
+  "entities": {
+    "Category": {
+      "title": "Category",
+      "description": "A tag used to filter images.",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "The display name of the category." },
+        "userId": { "type": "string", "description": "Uploader of the category." },
+        "createdAt": { "type": "string", "description": "Timestamp." }
+      },
+      "required": ["name", "userId", "createdAt"]
+    },
+    "GalleryImage": {
+      "title": "Gallery Image",
+      "description": "Metadata for an image uploaded to the gallery.",
+      "type": "object",
+      "properties": {
+        "url": { "type": "string", "description": "Public URL or Data URI of the image." },
+        "category": { "type": "string", "description": "The category name the image belongs to." },
+        "title": { "type": "string", "description": "Title of the image." },
+        "description": { "type": "string", "description": "A short story or description of the image." },
+        "userId": { "type": "string", "description": "UID of the user who uploaded the image." },
+        "userEmail": { "type": "string", "description": "Email of the uploader." },
+        "createdAt": { "type": "string", "description": "Server timestamp of creation." }
+      },
+      "required": ["url", "category", "title", "userId", "createdAt"]
+    }
+  },
+  "firestore": {
+    "images": {
+      "schema": "GalleryImage",
+      "description": "Global collection for user-uploaded images."
+    },
+    "categories": {
+      "schema": "Category",
+      "description": "User created categories."
+    }
+  }
+}
